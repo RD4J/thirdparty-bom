@@ -3,13 +3,52 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<parent>
+		<groupId>com.rd4j</groupId>
+		<artifactId>super-pom</artifactId>
+		<version>RELEASE</version>
+	</parent>
+
 	<groupId>com.rd4j</groupId>
 	<artifactId>thirdparty-bom</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
 	<name>thirdparty-bom</name>
 	<description>thirdparty mavem bom</description>
+	<url>https://github.com/RD4J/thirdparty-bom</url>
+
+	<licenses>
+		<license>
+			<name>The GNU General Public License v3.0</name>
+			<url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:git://github.com/RD4J/thirdparty-bom.git</connection>
+		<developerConnection>scm:git:ssh://github.com/RD4J/thirdparty-bom.git</developerConnection>
+		<url>https://github.com/RD4J/thirdparty-bom/tree/master</url>
+	</scm>
+
+	<developers>
+		<developer>
+			<name>shaon zhang</name>
+			<email>shaon.zhang@qq.com</email>
+			<url>https://github.com/ShaonZhang</url>
+		</developer>
+	</developers>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 
 	<properties>
 		<!-- spring -->

@@ -11,7 +11,7 @@
 
 	<groupId>com.rd4j</groupId>
 	<artifactId>thirdparty-bom</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>thirdparty-bom</name>
@@ -33,35 +33,29 @@
 
 	<developers>
 		<developer>
+			<id>shaonzhang</id>
 			<name>shaon zhang</name>
 			<email>shaon.zhang@qq.com</email>
 			<url>https://github.com/ShaonZhang</url>
+			<roles>
+				<role>owner</role>
+				<role>developer</role>
+			</roles>
+			<organization>rd4j</organization>
+			<organizationUrl>https://github.com/RD4J</organizationUrl>
 		</developer>
 	</developers>
 
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
-
 	<properties>
 		<!-- spring -->
-		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
-		<spring-boot.version>2.1.2.RELEASE</spring-boot.version>
-		<spring.version>5.1.4.RELEASE</spring.version>
-		<mybatis-spring-boot-starter.version>1.3.2</mybatis-spring-boot-starter.version>
-		<spring-boot-starter-velocity.version>1.4.7.RELEASE</spring-boot-starter-velocity.version>
+		<spring-cloud.version>Hoxton.SR6</spring-cloud.version>
+		<spring-boot.version>2.3.1.RELEASE</spring-boot.version>
+		<spring.version>5.2.7.RELEASE</spring.version>
+		<mybatis-spring-boot-starter.version>2.1.3</mybatis-spring-boot-starter.version>
+		<dubbo.version>2.7.7</dubbo.version>
 		<!-- log -->
-		<log4j.version>1.2.17</log4j.version>
-		<!-- spring boot 1.4.3-RELEASE can not work with log4j2 2.7 -->
-		<log4j2.version>2.11.1</log4j2.version>
-		<slf4j.version>1.7.21</slf4j.version>
+		<log4j2.version>2.13.3</log4j2.version>
+		<slf4j.version>1.7.30</slf4j.version>
 
 		<!-- runtime -->
 		<tomcat.version>7.0.73</tomcat.version>
@@ -73,22 +67,21 @@
 		<junit.version>4.12</junit.version>
 
 		<!-- utils -->
-		<jackson.mapper.asl.version>1.9.13</jackson.mapper.asl.version>
 		<dom4j.version>1.6.1</dom4j.version>
 		<commons.io.version>2.5</commons.io.version>
-		<commons.fileupload.version>1.3.2</commons.fileupload.version>
+		<commons.fileupload.version>1.4</commons.fileupload.version>
 		<poi.version>3.9</poi.version>
-		<guava.version>20.0</guava.version>
+		<guava.version>29.0-jre</guava.version>
 		<async-http-client.version>1.9.39</async-http-client.version>
 		<avro.version>1.7.7</avro.version>
 		<classmate.version>1.3.1</classmate.version>
 		<common-config.version>2.0.0</common-config.version>
 		<common-utils.version>2.0.0</common-utils.version>
-		<commons-beanutils.version>1.9.3</commons-beanutils.version>
+		<commons-beanutils.version>1.9.4</commons-beanutils.version>
 		<commons-cli.version>1.3.1</commons-cli.version>
 		<commons-codec.version>1.10</commons-codec.version>
 		<commons-collections.version>3.2.2</commons-collections.version>
-		<commons-compress.version>1.4.1</commons-compress.version>
+		<commons-compress.version>1.20</commons-compress.version>
 		<commons-io.version>2.4</commons-io.version>
 		<commons-lang.version>2.6</commons-lang.version>
 		<commons-lang3.version>3.3.2</commons-lang3.version>
@@ -96,16 +89,14 @@
 		<concurrent-trees.version>1.0.0</concurrent-trees.version>
 		<curator.version>2.7.1</curator.version>
 		<disruptor.version>3.3.2</disruptor.version>
-		<fastjson.version>1.2.31</fastjson.version>
+		<fastjson.version>1.2.72</fastjson.version>
 		<gson.version>2.8.5</gson.version>
-		<guava.version>19.0</guava.version>
 		<hessian.version>4.0.38</hessian.version>
 		<hibernate-validator.version>5.3.3.Final</hibernate-validator.version>
 		<httpasyncclient.version>4.1.2</httpasyncclient.version>
 		<httpclient.version>4.5.3</httpclient.version>
 		<httpcore.version>4.4.6</httpcore.version>
-		<jackson2.version>2.9.6</jackson2.version>
-		<jackson-core-asl.version>1.9.13</jackson-core-asl.version>
+		<jackson.version>2.11.1</jackson.version>
 		<javassist.version>3.18.1-GA</javassist.version>
 		<jboss-logging.version>3.3.0.Final</jboss-logging.version>
 		<jline.version>0.9.94</jline.version>
@@ -115,10 +106,10 @@
 		<kafka-clients.version>0.9.0.1</kafka-clients.version>
 		<kafka-schema-registry-client.version>2.0.0</kafka-schema-registry-client.version>
 		<libphonenumber.version>7.1.1</libphonenumber.version>
-		<libthrift.version>0.9.3</libthrift.version>
+		<libthrift.version>0.13.0</libthrift.version>
 		<lz4.version>1.3.0</lz4.version>
-		<netty4.version>4.1.25.Final</netty4.version>
-		<netty3.version>3.10.5.Final</netty3.version>
+		<netty4.version>4.1.50.Final</netty4.version>
+		<netty3.version>3.10.6.Final</netty3.version>
 		<paranamer.version>2.6</paranamer.version>
 		<protobuf-java.version>2.6.1</protobuf-java.version>
 		<protoparser.version>4.0.3</protoparser.version>
@@ -126,7 +117,7 @@
 		<xbean-reflect.version>4.5</xbean-reflect.version>
 		<xz.version>1.0</xz.version>
 		<zkclient.version>0.3</zkclient.version>
-		<zookeeper.version>3.4.6</zookeeper.version>
+		<zookeeper.version>3.6.1</zookeeper.version>
 		<springfox-swagger2.version>2.8.0</springfox-swagger2.version>
 		<swagger-annotations.version>1.5.20</swagger-annotations.version>
 		<thumbnailator.version>0.4.8</thumbnailator.version>
@@ -149,112 +140,18 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<!-- commons-logging is banned -->
 			<dependency>
 				<groupId>org.springframework</groupId>
-				<artifactId>spring-core</artifactId>
+				<artifactId>spring-framework-bom</artifactId>
 				<version>${spring.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
 				<exclusions>
 					<exclusion>
 						<groupId>commons-logging</groupId>
 						<artifactId>commons-logging</artifactId>
 					</exclusion>
 				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-aop</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-aspects</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-beans</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context-support</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-expression</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-instrument</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-instrument-tomcat</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-jdbc</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-jms</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-messaging</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-orm</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-oxm</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-test</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-tx</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-web</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc-portlet</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-websocket</artifactId>
-				<version>${spring.version}</version>
 			</dependency>
 			<!-- mybatis -->
 			<dependency>
@@ -265,16 +162,38 @@
 			<dependency>
 				<groupId>org.mybatis.generator</groupId>
 				<artifactId>mybatis-generator-core</artifactId>
-				<version>1.3.5</version>
+				<version>1.4.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
-				<version>3.4.2</version>
+				<version>3.5.5</version>
 			</dependency>
-			<!-- velocity模版引擎 -->
-			<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-velocity</artifactId> 
-				<version>${spring-boot-starter-velocity.version}</version> </dependency> -->
+			<!-- dubbo -->
+			<dependency>
+				<groupId>org.apache.dubbo</groupId>
+				<artifactId>dubbo-spring-boot-starter</artifactId>
+				<version>${dubbo.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.dubbo</groupId>
+				<artifactId>dubbo</artifactId>
+				<version>${dubbo.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>javax.servlet</groupId>
+						<artifactId>servlet-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>log4j</groupId>
+						<artifactId>log4j</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
 			<!-- log -->
 			<dependency>
 				<groupId>org.slf4j</groupId>
@@ -312,11 +231,6 @@
 				<version>${slf4j.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>log4j</groupId>
-				<artifactId>log4j</artifactId>
-				<version>${log4j.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.apache.logging.log4j</groupId>
 				<artifactId>log4j-api</artifactId>
 				<version>${log4j2.version}</version>
@@ -332,11 +246,6 @@
 				<version>${log4j2.version}</version>
 			</dependency>
 			<!-- utils -->
-			<dependency>
-				<groupId>org.codehaus.jackson</groupId>
-				<artifactId>jackson-mapper-asl</artifactId>
-				<version>${jackson.mapper.asl.version}</version>
-			</dependency>
 			<dependency>
 				<groupId>dom4j</groupId>
 				<artifactId>dom4j</artifactId>
@@ -357,11 +266,6 @@
 				<artifactId>commons-fileupload</artifactId>
 				<version>${commons.fileupload.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.google.guava</groupId>
-				<artifactId>guava</artifactId>
-				<version>${guava.version}</version>
-			</dependency>
 			<!-- json -->
 			<dependency>
 				<groupId>com.alibaba</groupId>
@@ -371,19 +275,9 @@
 			<dependency>
 				<groupId>com.fasterxml.jackson</groupId>
 				<artifactId>jackson-bom</artifactId>
-				<version>${jackson2.version}</version>
+				<version>${jackson.version}</version>
 				<scope>import</scope>
 				<type>pom</type>
-			</dependency>
-			<dependency>
-				<groupId>org.codehaus.jackson</groupId>
-				<artifactId>jackson-core-asl</artifactId>
-				<version>${jackson-core-asl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.codehaus.jackson</groupId>
-				<artifactId>jackson-mapper-asl</artifactId>
-				<version>${jackson-core-asl.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.code.gson</groupId>
@@ -397,7 +291,6 @@
 				<artifactId>guava</artifactId>
 				<version>${guava.version}</version>
 			</dependency>
-
 			<!-- commons -->
 			<dependency>
 				<groupId>commons-beanutils</groupId>
@@ -788,7 +681,7 @@
 			<dependency>
 				<groupId>org.apache.Tika</groupId>
 				<artifactId>Tika-core</artifactId>
-				<version>1.6</version>
+				<version>1.24.1</version>
 			</dependency>
 			<!-- 拼音 -->
 			<dependency>

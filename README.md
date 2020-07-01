@@ -1,2 +1,2 @@
 # thirdparty-bom
-thirdparty bom.
+thirdparty bom

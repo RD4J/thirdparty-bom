@@ -11,7 +11,7 @@
 
 	<groupId>com.rd4j</groupId>
 	<artifactId>thirdparty-bom</artifactId>
-	<version>1.1.0-alpha1</version>
+	<version>1.1.0-alpha2</version>
 	<packaging>pom</packaging>
 
 	<name>thirdparty-bom</name>
@@ -681,8 +681,8 @@
 			</dependency>
 			<!-- 文件 mime type 解析 -->
 			<dependency>
-				<groupId>org.apache.Tika</groupId>
-				<artifactId>Tika-core</artifactId>
+				<groupId>org.apache.tika</groupId>
+				<artifactId>tika-core</artifactId>
 				<version>${tika.version}</version>
 			</dependency>
 			<dependency>

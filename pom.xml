@@ -63,7 +63,7 @@
 		<jstl.version>1.2</jstl.version>
 
 		<!-- test -->
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 
 		<!-- utils -->
 		<dom4j.version>1.6.1</dom4j.version>

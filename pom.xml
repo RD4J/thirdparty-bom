@@ -105,7 +105,7 @@
 		<kafka-clients.version>0.9.0.1</kafka-clients.version>
 		<kafka-schema-registry-client.version>2.0.0</kafka-schema-registry-client.version>
 		<libphonenumber.version>7.1.1</libphonenumber.version>
-		<libthrift.version>0.13.0</libthrift.version>
+		<libthrift.version>0.14.0</libthrift.version>
 		<lz4.version>1.3.0</lz4.version>
 		<netty4.version>4.1.50.Final</netty4.version>
 		<netty3.version>3.10.6.Final</netty3.version>

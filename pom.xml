@@ -67,7 +67,7 @@
 
 		<!-- utils -->
 		<dom4j.version>1.6.1</dom4j.version>
-		<commons.io.version>2.5</commons.io.version>
+		<commons.io.version>2.7</commons.io.version>
 		<commons.fileupload.version>1.4</commons.fileupload.version>
 		<poi.version>3.9</poi.version>
 		<guava.version>29.0-jre</guava.version>
@@ -81,7 +81,7 @@
 		<commons-codec.version>1.10</commons-codec.version>
 		<commons-collections.version>3.2.2</commons-collections.version>
 		<commons-compress.version>1.20</commons-compress.version>
-		<commons-io.version>2.4</commons-io.version>
+		<commons-io.version>2.7</commons-io.version>
 		<commons-lang.version>2.6</commons-lang.version>
 		<commons-lang3.version>3.3.2</commons-lang3.version>
 		<compress-lzf.version>1.0.3</compress-lzf.version>

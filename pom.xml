@@ -50,7 +50,7 @@
 		<!-- spring -->
 		<spring-cloud.version>Hoxton.SR6</spring-cloud.version>
 		<spring-boot.version>2.3.1.RELEASE</spring-boot.version>
-		<spring.version>5.2.7.RELEASE</spring.version>
+		<spring.version>5.2.9.RELEASE</spring.version>
 		<dubbo.version>2.7.7</dubbo.version>
 		<!-- log -->
 		<log4j2.version>2.13.3</log4j2.version>

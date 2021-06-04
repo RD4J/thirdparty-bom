@@ -93,7 +93,7 @@
 		<hessian.version>4.0.38</hessian.version>
 		<hibernate-validator.version>5.3.3.Final</hibernate-validator.version>
 		<httpasyncclient.version>4.1.2</httpasyncclient.version>
-		<httpclient.version>4.5.3</httpclient.version>
+		<httpclient.version>4.5.13</httpclient.version>
 		<httpcore.version>4.4.6</httpcore.version>
 		<jackson.version>2.11.1</jackson.version>
 		<javassist.version>3.18.1-GA</javassist.version>
